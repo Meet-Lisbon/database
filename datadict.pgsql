@@ -85,9 +85,9 @@ AS (
 	  AND c.table_name IN(SELECT DISTINCT table_name FROM baseTbl)
 )
 
-SELECT md.field_name AS col_name
+SELECT md.field_name AS tbl_name
 , COALESCE(pk.is_key, ' ') AS constraint
-, md.COLUMN_NM, md.data_type, md.NULLABLE AS required, c.column_descr 
+, md.COLUMN_NM, md.data_type, md.NULLABLE AS required, c.column_descr description 
 FROM      metadata      md
 LEFT JOIN meta_for_keys pk ON pk.SCHEMA_NM = md.SCHEMA_NM AND pk.field_name = md.field_name AND pk.COLUMN_NM = md.COLUMN_NM
 LEFT JOIN col_comm      c  ON c.SCHEMA_NM  = md.SCHEMA_NM AND c.field_name  = md.field_name AND c.COLUMN_NM  = md.COLUMN_NM
