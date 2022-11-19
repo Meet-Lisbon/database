@@ -16,7 +16,7 @@ services:
       - POSTGRES_DB
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./inits.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./full_create.sql:/docker-entrypoint-initdb.d/1-schema.sql
     ports:
       - "5433:5432"
   pgadmin:
