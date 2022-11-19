@@ -18,7 +18,7 @@ services:
       - pgdata:/var/lib/postgresql/data
       - ./full_create.sql:/docker-entrypoint-initdb.d/1-schema.sql
     ports:
-      - "5433:5432"
+      - "5432:5432"
   pgadmin:
     image: dpage/pgadmin4
     environment:
