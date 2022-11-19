@@ -1,3 +1,4 @@
+
 WITH 
 
 vars AS (
@@ -92,3 +93,4 @@ FROM      metadata      md
 LEFT JOIN meta_for_keys pk ON pk.SCHEMA_NM = md.SCHEMA_NM AND pk.field_name = md.field_name AND pk.COLUMN_NM = md.COLUMN_NM
 LEFT JOIN col_comm      c  ON c.SCHEMA_NM  = md.SCHEMA_NM AND c.field_name  = md.field_name AND c.COLUMN_NM  = md.COLUMN_NM
 ORDER BY md.SCHEMA_NM, md.field_name, md.ORD_POS
+-- based on https://raw.githubusercontent.com/DataResearchLabs/sql_scripts/main/postgresql/data_dictionary/data_dict_dump.sql
