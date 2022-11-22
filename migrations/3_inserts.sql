@@ -1,7 +1,12 @@
 -- Add users
-insert into users (usr_name, usr_email, usr_password_hash, usr_role) values('Francisco', 'francisco@gmail.com', 'test123', 'user');
-insert into users (usr_name, usr_email, usr_password_hash, usr_role) values('Maria', 'maria@gmail.com', 'test123', 'admin');
-insert into users (usr_name, usr_email, usr_password_hash, usr_role) values('Mario', 'mario@gmail.com', 'test123', 'user');
+insert into users (usr_name, usr_email, usr_password_hash, usr_role) values ('Francisco', 'francisco@gmail.com', 'test123', 'user');
+insert into users (usr_name, usr_email, usr_password_hash, usr_role) values ('Maria', 'maria@gmail.com', 'test123', 'admin');
+insert into users (usr_name, usr_email, usr_password_hash, usr_role) values ('Mario', 'mario@gmail.com', 'test123', 'user');
+
+-- Add categories
+insert into categories (cat_name, cat_icon) values ('Histórico','https://i.imgur.com/UvN5MuX.jpg');
+insert into categories (cat_name, cat_icon) values ('Turístico', 'https://i.imgur.com/h0oaDeK.jpg');
+insert into categories (cat_name, cat_icon) values ('Literatura', 'https://i.imgur.com/o0PGm6l.png');
 
 -- Add places 
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Padrão dos Descobrimentos','38.693684904994186','-9.205737120817991','Av. Brasília, 1400-038 Lisboa');
@@ -11,3 +16,13 @@ insert into places (place_name, place_latitude, place_longitude, place_address) 
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Lisboa Story Centre','38.7080016959867','-9.135374845390922','Praça do Comércio 78, 1100-148 Lisboa');
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Praça Luís de Camões','38.710585946483796','-9.143475756094265','Largo Luís de Camões, 1200-243 Lisboa');
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Farol de Belém','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa');
+
+
+
+
+
+
+
+
+
+
