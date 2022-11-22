@@ -70,7 +70,7 @@ create table places (
 );
 
 -- Add places description
-comment on column places.place_id is 'The placed''s uuid';
+comment on column places.place_id is 'The place''s uuid';
 comment on column places.place_name is 'The place''s name';
 comment on column places.place_latitude is 'The place''s latitude';
 comment on column places.place_longitude is 'The place''s longitude';
