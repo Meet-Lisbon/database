@@ -1,8 +1,11 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TYPE user_role AS ENUM ('admin', 'user');
+CREATE CAST (character varying AS user_role) WITH INOUT AS ASSIGNMENT;
 
 create table users (
     usr_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT users_pkey PRIMARY KEY,
+    usr_first_name varchar not null,
+    usr_last_name varchar,
     usr_name varchar not null unique,
     usr_email varchar not null unique,
     usr_password_hash varchar not null,
@@ -45,9 +48,9 @@ comment on column routes.updated_at is 'Last updated date';
 create table categories (
     cat_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT categories_pkey PRIMARY KEY,
     cat_name varchar not null,
-    cat_icon bytea not null,
-    created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
-    updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
+    cat_icon varchar not null,
+    created_at timestamp with time zone default CURRENT_TIMESTAMP,
+    updated_at timestamp with time zone default CURRENT_TIMESTAMP
 );
 
 -- Add categories description
@@ -61,8 +64,8 @@ comment on column categories.updated_at is 'Last updated date';
 create table places (
     place_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT places_pkey PRIMARY KEY,
     place_name varchar not null unique,
-    place_latitude decimal(6,5 ) not null,
-    place_longitude decimal(6,5 ) not null,
+    place_latitude varchar not null,
+    place_longitude varchar not null,
     place_address varchar,
     place_description varchar,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
