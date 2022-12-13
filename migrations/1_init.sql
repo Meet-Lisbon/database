@@ -16,7 +16,6 @@ create table users (
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
 );
 
-
 -- Add users descriptions
 comment on column users.usr_id is 'The user''s uuid';
 comment on column users.usr_name is 'The user''s username';
@@ -27,7 +26,6 @@ comment on column users.usr_role is 'The user''s role (user or admin)';
 comment on column users.usr_active is 'If user is active (default as true)';
 comment on column users.created_at is 'Creation date';
 comment on column users.updated_at is 'Last updated date';
-
 
 create table routes (
     route_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT routes_pkey PRIMARY KEY,
@@ -43,7 +41,6 @@ comment on column routes.route_data is 'The route''s data';
 comment on column routes.route_name is 'The route''s name';
 comment on column routes.created_at is 'Creation date';
 comment on column routes.updated_at is 'Last updated date';
-
 
 create table categories (
     cat_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT categories_pkey PRIMARY KEY,

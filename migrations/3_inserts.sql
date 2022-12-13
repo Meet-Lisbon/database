@@ -17,9 +17,16 @@ insert into places (place_name, place_latitude, place_longitude, place_address) 
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Praça Luís de Camões','38.710585946483796','-9.143475756094265','Largo Luís de Camões, 1200-243 Lisboa');
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Farol de Belém','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa');
 
+-- Add categories to the places
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos'),
+    (SELECT cat_id from categories where cat_name = 'Histórico')
+);
 
-
-
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Torre de Belém'),
+    (SELECT cat_id from categories where cat_name = 'Literatura')
+);
 
 
 
