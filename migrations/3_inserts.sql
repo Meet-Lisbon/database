@@ -1,7 +1,7 @@
 -- Add users
-insert into users (usr_name, usr_email, usr_password_hash, usr_role) values ('Francisco', 'francisco@gmail.com', 'test123', 'user');
-insert into users (usr_name, usr_email, usr_password_hash, usr_role) values ('Maria', 'maria@gmail.com', 'test123', 'admin');
-insert into users (usr_name, usr_email, usr_password_hash, usr_role) values ('Mario', 'mario@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Francisco', 'Traquete', 'frant7', 'francisco@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Maria', 'Martins', 'maria', 'maria@gmail.com', 'test123', 'admin');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Mario', 'Nascimento', 'darkarp', 'mario@gmail.com', 'test123', 'user');
 
 -- Add categories
 insert into categories (cat_name, cat_icon) values ('Histórico','https://i.imgur.com/UvN5MuX.jpg');
@@ -16,3 +16,14 @@ insert into places (place_name, place_latitude, place_longitude, place_address) 
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Lisboa Story Centre','38.7080016959867','-9.135374845390922','Praça do Comércio 78, 1100-148 Lisboa');
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Praça Luís de Camões','38.710585946483796','-9.143475756094265','Largo Luís de Camões, 1200-243 Lisboa');
 insert into places (place_name, place_latitude, place_longitude, place_address) values ('Farol de Belém','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa');
+
+-- Add categories to the places
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos'),
+    (SELECT cat_id from categories where cat_name = 'Histórico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Torre de Belém'),
+    (SELECT cat_id from categories where cat_name = 'Literatura')
+);
