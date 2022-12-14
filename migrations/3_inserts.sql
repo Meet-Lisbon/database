@@ -27,8 +27,3 @@ insert into places_categories (places_id, categories_id) values (
     (SELECT place_id from places where place_name = 'Torre de Belém'),
     (SELECT cat_id from categories where cat_name = 'Literatura')
 );
-
-
-
-
-

@@ -50,8 +50,8 @@ create table categories (
     cat_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT categories_pkey PRIMARY KEY,
     cat_name varchar not null,
     cat_icon varchar not null,
-    created_at timestamp with time zone default CURRENT_TIMESTAMP,
-    updated_at timestamp with time zone default CURRENT_TIMESTAMP
+    created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
+    updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
 );
 
 -- Add categories description
@@ -82,4 +82,3 @@ comment on column places.place_address is 'The place''s address';
 comment on column places.place_description is 'The place''s description';
 comment on column places.created_at is 'Creation date';
 comment on column places.updated_at is 'Last updated date';
-
