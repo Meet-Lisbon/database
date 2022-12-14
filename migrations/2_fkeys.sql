@@ -29,15 +29,15 @@ comment on column users_routes.created_at is 'Creation date';
 comment on column users_routes.updated_at is 'Last updated date';
 
 create table wishlist (
-    user_id uuid REFERENCES users (usr_id) ON UPDATE CASCADE ON DELETE CASCADE,
+    users_id uuid REFERENCES users (usr_id) ON UPDATE CASCADE ON DELETE CASCADE,
     places_id uuid REFERENCES places (place_id) ON UPDATE CASCADE ON DELETE CASCADE,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP,
-    CONSTRAINT wishlist_pkey PRIMARY KEY (user_id, places_id)
+    CONSTRAINT wishlist_pkey PRIMARY KEY (users_id, places_id)
 );
 
 -- Add wishlist description
-comment on column wishlist.user_id is 'The user''s uuid';
+comment on column wishlist.users_id is 'The user''s uuid';
 comment on column wishlist.places_id is 'The place''s uuid';
 comment on column wishlist.created_at is 'Creation date';
 comment on column wishlist.updated_at is 'Last updated date';

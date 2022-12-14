@@ -12,8 +12,12 @@ create table users (
     usr_email_verified boolean not null default false,
     usr_role user_role not null,
     usr_active boolean not null default true,
+    usr_reset_code varchar,
+    usr_register_code varchar,
+    usr_reset_code_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
+
 );
 
 -- Add users descriptions
