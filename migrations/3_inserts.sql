@@ -27,3 +27,37 @@ insert into places_categories (places_id, categories_id) values (
     (SELECT place_id from places where place_name = 'Torre de Belém'),
     (SELECT cat_id from categories where cat_name = 'Literatura')
 );
+
+-- Add places to wishlist
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT place_id from places where place_name = 'Torre de Belém')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'darkarp'),
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+);
+
+-- Insert routes
+insert into routes (route_data, route_name) values ('Test Data','Test name');
+insert into routes (route_data, route_name) values ('Test Data 2','Test name 2');
+
+-- Insert into routes_places
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Test name'),
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+);
+
+
+-- Insert into users_routes
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT route_id from routes where route_name = 'Test name')
+);
+
