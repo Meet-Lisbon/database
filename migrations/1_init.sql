@@ -33,7 +33,7 @@ comment on column users.updated_at is 'Last updated date';
 
 create table routes (
     route_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT routes_pkey PRIMARY KEY,
-    route_data bytea not null,
+    route_data VARCHAR not null,
     route_name VARCHAR not null,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
@@ -65,6 +65,7 @@ comment on column categories.updated_at is 'Last updated date';
 create table places (
     place_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT places_pkey PRIMARY KEY,
     place_name varchar not null unique,
+    place_image_url varchar,
     place_latitude varchar not null,
     place_longitude varchar not null,
     place_address varchar,
