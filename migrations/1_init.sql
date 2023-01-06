@@ -41,7 +41,7 @@ create table routes (
 
 -- Add routes description
 comment on column routes.route_id is 'The route''s uuid';
-comment on column routes.route_data is 'The route''s data';
+comment on column routes.route_data is 'The route''s description/data';
 comment on column routes.route_name is 'The route''s name';
 comment on column routes.created_at is 'Creation date';
 comment on column routes.updated_at is 'Last updated date';
