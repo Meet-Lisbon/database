@@ -70,7 +70,6 @@ create table places (
     place_longitude varchar not null,
     place_address varchar,
     place_description varchar,
-    place_url varchar,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
 );
