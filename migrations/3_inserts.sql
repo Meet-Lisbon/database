@@ -54,6 +54,16 @@ insert into routes_places (routes_id, places_id) values (
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
 
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Test name'),
+    (SELECT place_id from places where place_name = 'Torre de Belém')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Test name'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
+
 
 -- Insert into users_routes
 insert into users_routes (user_id, routes_id) values (

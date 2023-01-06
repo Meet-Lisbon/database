@@ -3,8 +3,8 @@ WITH
 
 vars AS (
   SELECT 
-    'public'     AS v_SchemaName  -- Set to the schema whose tables you want in the Data Dictionary
-  , 'NO'         AS v_TablesOnly  -- YES=Limit To Tables only; NO=Include views too 
+    'public'     AS v_SchemaName
+  , 'NO'         AS v_TablesOnly 
 ), baseTbl AS (
   SELECT table_schema AS SchemaName, table_catalog ,table_type, table_name, table_schema
   FROM INFORMATION_SCHEMA.TABLES
