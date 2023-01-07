@@ -9,7 +9,14 @@ insert into categories (cat_name, cat_icon) values ('Turístico', 'https://i.img
 insert into categories (cat_name, cat_icon) values ('Literatura', 'https://i.imgur.com/o0PGm6l.png');
 
 -- Add places 
-insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values ('Padrão dos Descobrimentos', 'https://i.imgur.com/n7Q4HHM.jpg', '38.693684904994186','-9.205737120817991','Av. Brasília, 1400-038 Lisboa', 'blahblah blahblah <br> blahblahblah blah');
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Padrão dos Descobrimentos', 'https://i.imgur.com/n7Q4HHM.jpg', '38.693684904994186','-9.205737120817991','Av. Brasília, 1400-038 Lisboa',
+    ' 
+        Descricao teste
+        blah blah
+        nao sei se isto funciona mas vamos ver...
+    '
+);
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address) values ('Torre de Belém', 'https://i.imgur.com/KN7EF21.jpg','38.69166125982115','-9.215841104472132','Av. Brasília, 1400-038 Lisboa');
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address) values ('Armazéns do Chiado', 'https://i.imgur.com/NXLLEv4.jpg','38.711178061135314','-9.139565130866167','R. do Carmo, 1200-094 Lisboa');
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address) values ('Casa dos Bicos / Fundação José Saramago', 'https://i.imgur.com/M7jq1qe.jpg','38.70916949370186','-9.13266612522021','R. dos Bacalhoeiros 10, 1100-135 Lisboa');
