@@ -12,9 +12,9 @@ insert into categories (cat_name, cat_icon) values ('Literatura', 'https://i.img
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
     'Padrão dos Descobrimentos', 'https://i.imgur.com/n7Q4HHM.jpg', '38.693684904994186','-9.205737120817991','Av. Brasília, 1400-038 Lisboa',
     ' 
-        Descricao teste
-        blah blah
-        nao sei se isto funciona mas vamos ver...
+        Descricao teste <br>
+        blah blah <br>
+        nao sei se isto funciona mas vamos ver... <br>
     '
 );
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address) values ('Torre de Belém', 'https://i.imgur.com/KN7EF21.jpg','38.69166125982115','-9.215841104472132','Av. Brasília, 1400-038 Lisboa');
