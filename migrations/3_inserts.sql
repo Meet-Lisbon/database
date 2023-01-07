@@ -44,30 +44,30 @@ insert into wishlist (users_id, places_id) values (
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
 
--- Insert routes
-insert into routes (route_data, route_name) values ('Test Data','Test name');
-insert into routes (route_data, route_name) values ('Test Data 2','Test name 2');
+-- -- Insert routes
+-- insert into routes (route_data, route_name) values ('Test Data','Test name');
+-- insert into routes (route_data, route_name) values ('Test Data 2','Test name 2');
 
--- Insert into routes_places
-insert into routes_places (routes_id, places_id) values (
-    (SELECT route_id from routes where route_name = 'Test name'),
-    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
-);
+-- -- Insert into routes_places
+-- insert into routes_places (routes_id, places_id) values (
+--     (SELECT route_id from routes where route_name = 'Test name'),
+--     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+-- );
 
-insert into routes_places (routes_id, places_id) values (
-    (SELECT route_id from routes where route_name = 'Test name'),
-    (SELECT place_id from places where place_name = 'Torre de Belém')
-);
+-- insert into routes_places (routes_id, places_id) values (
+--     (SELECT route_id from routes where route_name = 'Test name'),
+--     (SELECT place_id from places where place_name = 'Torre de Belém')
+-- );
 
-insert into routes_places (routes_id, places_id) values (
-    (SELECT route_id from routes where route_name = 'Test name'),
-    (SELECT place_id from places where place_name = 'Farol de Belém')
-);
+-- insert into routes_places (routes_id, places_id) values (
+--     (SELECT route_id from routes where route_name = 'Test name'),
+--     (SELECT place_id from places where place_name = 'Farol de Belém')
+-- );
 
 
--- Insert into users_routes
-insert into users_routes (user_id, routes_id) values (
-    (SELECT usr_id from users where usr_name = 'maria'),
-    (SELECT route_id from routes where route_name = 'Test name')
-);
+-- -- Insert into users_routes
+-- insert into users_routes (user_id, routes_id) values (
+--     (SELECT usr_id from users where usr_name = 'maria'),
+--     (SELECT route_id from routes where route_name = 'Test name')
+-- );
 
