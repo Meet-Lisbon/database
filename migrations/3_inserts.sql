@@ -58,10 +58,76 @@ insert into places (place_name, place_image_url, place_latitude, place_longitude
         A figura é de bronze e tem 4 metros de altura, assente sobre um pedestal octogonal, rodeado por oito estátuas: Fernão Lopes, Pedro Nunes, Gomes Eanes de Azurara, João de Barros, Fernão Lopes de Cantanhede, Vasco Mouzinho de Quevedo, Jerónimo Corte-Real e Francisco Sá de Menezes. <br>
     '
 );
+
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
     'Farol de Belém', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
     '
-        Esta torre é um falso farol e que nunca funcionou. <br>
+        Esta torre é um falso farol que nunca funcionou. <br>
+        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
+        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
+        
+    '
+);
+
+--! fix imagens e descrição
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Timeout Market', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    '
+        Esta torre é um falso farol que nunca funcionou. <br>
+        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
+        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
+        
+    '
+);
+
+--! fix imagens e descrição
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Arco do Triunfo', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    '
+        Esta torre é um falso farol que nunca funcionou. <br>
+        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
+        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
+        
+    '
+);
+
+--! fix imagens e descrição
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Estátua D. José I', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    '
+        Esta torre é um falso farol que nunca funcionou. <br>
+        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
+        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
+        
+    '
+);
+
+--! fix imagens e descrição
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'IADE', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    '
+        Esta torre é um falso farol que nunca funcionou. <br>
+        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
+        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
+        
+    '
+);
+--! fix imagens e descrição
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Rua cor de Rosa', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    '
+        Esta torre é um falso farol que nunca funcionou. <br>
+        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
+        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
+        
+    '
+);
+
+--! fix imagens e descrição
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Teatro da Trindade INATEL', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    '
+        Esta torre é um falso farol que nunca funcionou. <br>
         Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
         Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
         
@@ -95,30 +161,91 @@ insert into wishlist (users_id, places_id) values (
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
 
--- -- Insert routes
--- insert into routes (route_data, route_name) values ('Test Data','Test name');
--- insert into routes (route_data, route_name) values ('Test Data 2','Test name 2');
+-- Insert routes
+insert into routes (route_name, route_data) values ('Cais do Sodré', 'Test Data 3');
+insert into routes (route_name, route_data) values ('Baixa/Chiado', 'Test Data 4');
+insert into routes (route_name, route_data) values ('Belém', 'Test Data 1');
+insert into routes (route_name, route_data) values ('Praça do Comércio', 'Test Data 2');
+insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 4');
+-- Insert into routes_places
 
--- -- Insert into routes_places
--- insert into routes_places (routes_id, places_id) values (
---     (SELECT route_id from routes where route_name = 'Test name'),
---     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
--- );
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Cais do Sodré'),
+    (SELECT place_id from places where place_name = 'IADE')
+);
 
--- insert into routes_places (routes_id, places_id) values (
---     (SELECT route_id from routes where route_name = 'Test name'),
---     (SELECT place_id from places where place_name = 'Torre de Belém')
--- );
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Cais do Sodré'),
+    (SELECT place_id from places where place_name = 'Timeout Market')
+);
 
--- insert into routes_places (routes_id, places_id) values (
---     (SELECT route_id from routes where route_name = 'Test name'),
---     (SELECT place_id from places where place_name = 'Farol de Belém')
--- );
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Cais do Sodré'),
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
+    (SELECT place_id from places where place_name = 'Casa dos Bicos / Fundação José Saramago')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
+    (SELECT place_id from places where place_name = 'Praça Luis de Camões')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Belém'),
+    (SELECT place_id from places where place_name = 'Padrão dos descobrimento')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Belém'),
+    (SELECT place_id from places where place_name = 'Torre de Belém')
+);
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Belém'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
 
 
--- -- Insert into users_routes
--- insert into users_routes (user_id, routes_id) values (
---     (SELECT usr_id from users where usr_name = 'maria'),
---     (SELECT route_id from routes where route_name = 'Test name')
--- );
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Praça do Comércio'),
+    (SELECT place_id from places where place_name = 'Arco do Triunfo')
+);
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Praça do Comércio'),
+    (SELECT place_id from places where place_name = 'Estátua D José I')
+);
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Praça do Comércio'),
+    (SELECT place_id from places where place_name = 'Lisboa Story Center')
+);
+
+
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
+    (SELECT place_id from places where place_name = 'Rua cor de rosa')
+);
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
+);
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
+    (SELECT place_id from places where place_name = 'Teatro da Trindade')
+);
+
+
+-- Insert into users_routes
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT route_id from routes where route_name = 'Test name')
+);
 
