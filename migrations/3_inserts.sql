@@ -201,51 +201,133 @@ insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
     (SELECT place_id from places where place_name = 'Torre de Belém')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
+
 
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Lisboa Story Centre')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
 
+
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Farol de Belém')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Arco do Triunfo')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Estátua D. José I')
 );
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'afih'),
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'afih'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'Torre de Belém')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'Timeout Market')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'IADE')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'johnny'),
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Casa dos Bicos / Fundação José Saramago')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Lisboa Story Centre')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Arco do Triunfo')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'IADE')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Estátua D. José I')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+);
+
 
 -- Insert routes
 insert into routes (route_name, route_data) values ('Cais do Sodré', 'Test Data 3');
