@@ -138,7 +138,62 @@ insert into places_categories (places_id, categories_id) values (
 
 insert into places_categories (places_id, categories_id) values (
     (SELECT place_id from places where place_name = 'Torre de Belém'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Casa dos Bicos / Fundação José Saramago'),
     (SELECT cat_id from categories where cat_name = 'Literatura')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Lisboa Story Centre'),
+    (SELECT cat_id from categories where cat_name = 'Entretenimento')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões'),
+    (SELECT cat_id from categories where cat_name = 'Literatura')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Farol de Belém'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Timeout Market'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Arco do Triunfo'),
+    (SELECT cat_id from categories where cat_name = 'Histórico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Estátua D. José I'),
+    (SELECT cat_id from categories where cat_name = 'Figuras Históricas')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'IADE'),
+    (SELECT cat_id from categories where cat_name = 'Ensino')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL'),
+    (SELECT cat_id from categories where cat_name = 'Entretenimento')
 );
 
 -- Add places to wishlist
