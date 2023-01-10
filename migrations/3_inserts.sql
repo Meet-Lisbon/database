@@ -114,7 +114,6 @@ insert into places (place_name, place_image_url, place_latitude, place_longitude
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
     'Rua cor de Rosa', 'https://i.imgur.com/rK37VGk.jpg', '38.70738693564283', '-9.143750987043921', 'R. Nova do Carvalho, 1200-370 Lisboa',
     '
@@ -123,7 +122,6 @@ insert into places (place_name, place_image_url, place_latitude, place_longitude
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
     'Teatro da Trindade INATEL', 'https://i.imgur.com/iV2dPdL.jpg','38.71202888351289', '-9.14248954471498','R. Nova da Trindade 9, 1200-301 Lisboa',
     '
