@@ -252,9 +252,9 @@ insert into routes (route_name, route_data) values ('Cais do Sodré', 'Test Data
 insert into routes (route_name, route_data) values ('Baixa/Chiado', 'Test Data 4');
 insert into routes (route_name, route_data) values ('Belém', 'Test Data 1');
 insert into routes (route_name, route_data) values ('Praça do Comércio', 'Test Data 2');
-insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 4');
--- Insert into routes_places
+insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 5');
 
+-- Insert into routes_places
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
     (SELECT place_id from places where place_name = 'IADE')
@@ -356,6 +356,8 @@ insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT route_id from routes where route_name = 'Rua do Alecrim')
 );
+
+
 insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT route_id from routes where route_name = 'Praça do Comércio')
@@ -363,4 +365,82 @@ insert into users_routes (user_id, routes_id) values (
 insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'johnny'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'johnny'),
+    (SELECT route_id from routes where route_name = 'Belém')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'afih'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'michael'),
+    (SELECT route_id from routes where route_name = 'Belém')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'michael'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'costa'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'costa'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'costa'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Belém')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
 );
