@@ -69,68 +69,55 @@ insert into places (place_name, place_image_url, place_latitude, place_longitude
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Timeout Market', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Timeout Market', 'https://i.imgur.com/gE5UNHa.jpg','38.70720006371532', '-9.145917302178974', 'Av. 24 de Julho 49, 1200-479 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        Time Out Market Lisboa é um food hall. <br>
+        O conceito passa por juntar os melhores chefs, restaurantes e projetos gastronómicos da capital portuguesa, com base nas recomendações dos críticos e colaboradores da revista Time Out. <br>
+    '
+);
+
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Arco do Triunfo', 'https://i.imgur.com/PpQSuXD.jpg','38.708687470695565', '-9.136813573550741', 'R. Augusta 2, 1100-053 Lisboa',
+    '
+        A construção do Arco do Triunfo foi programada em 1759, no quadro da reconstrução pombalina após a destruição da baixa lisboeta pelo terramoto de 1755. <br>
+        A obra do arco triunfal, que já estava fechado em 1862 por ocasião do casamento de D. Luís I, como se observa em fotografias da época, apenas foi concluída em 1873. <br>
+    '
+);
+
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Estátua D. José I', 'https://i.imgur.com/X5okuwp.jpg','38.70747350697425', '-9.136330775948354', 'Praça do Comércio MB, 1100-148 Lisboa',
+    '
+        O monumento, de 14 m de altura, erguido para homenagear D. José I integra a sua estátua equestre em bronze. <br>
+        De influência francesa e a primeira estátua em bronze fundida em Portugal é considerada uma das mais belas estátuas do género em toda a Europa. <br> 
+        É também considerada a estátua pública mais antiga de Lisboa e do país. <br>
+    '
+);
+
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'IADE', 'https://i.imgur.com/YzVHqOJ.jpg','38.70735444022605', '-9.152356849095387', 'Av. Dom Carlos i 4, 1200-649 Lisboa',
+    '
+        O IADE – Faculdade de Design Tecnologia e Comunicação da Universidade Europeia, tem sido um laboratório de criatividade, talento e liderança reconhecido por toda a sociedade.<br>
+        É hoje uma referência no ensino da criatividade, escola pioneira no ensino do Design em Portugal e uma das melhores na Europa, além de estar entre as primeiras no ensino da Publicidade, do Marketing e da Fotografia. <br>
+        Foi fundado, em Lisboa, em 1969, tendo sido pioneiro do ensino do design em Portugal. É, atualmente, a instituição que mais estudantes forma nesta área. <br>
     '
 );
 
 --! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Arco do Triunfo', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Rua cor de Rosa', 'https://i.imgur.com/rK37VGk.jpg', '38.70738693564283', '-9.143750987043921', 'R. Nova do Carvalho, 1200-370 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        O nome "Rua Cor de Rosa" surgiu após um projeto de intervenção urbana em 2011, que foi consolidado em 2013. <br>
+        A sua pintura marcou o desejo de mudança e transformação desta região, que no passado não tinha uma fama muito simpática em Lisboa. <br>
     '
 );
 
 --! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Estátua D. José I', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Teatro da Trindade INATEL', 'https://i.imgur.com/iV2dPdL.jpg','38.71202888351289', '-9.14248954471498','R. Nova da Trindade 9, 1200-301 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
-    '
-);
-
---! fix imagens e descrição
-insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'IADE', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
-    '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
-    '
-);
---! fix imagens e descrição
-insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Rua cor de Rosa', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
-    '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
-    '
-);
-
---! fix imagens e descrição
-insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Teatro da Trindade INATEL', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
-    '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        Em 1866, Francisco Palha, escritor e dramaturgo, decidiu construir o seu próprio teatro. <br>
+        Escolheu aquela zona da cidade pela sua antiga vocação cultural e recreativa - aí funcionara, em meados do século XVIII, a Academia da Trindade, o primeiro Teatro Popular de Ópera.<br>
     '
 );
 
