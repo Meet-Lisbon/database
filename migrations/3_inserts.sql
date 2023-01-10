@@ -7,6 +7,10 @@ insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_passw
 insert into categories (cat_name, cat_icon) values ('Histórico','https://i.imgur.com/UvN5MuX.jpg');
 insert into categories (cat_name, cat_icon) values ('Turístico', 'https://i.imgur.com/h0oaDeK.jpg');
 insert into categories (cat_name, cat_icon) values ('Literatura', 'https://i.imgur.com/o0PGm6l.png');
+insert into categories (cat_name, cat_icon) values ('Figuras Históricas', 'https://i.imgur.com/GpBWvp8.png');
+insert into categories (cat_name, cat_icon) values ('Entretenimento', 'https://i.imgur.com/j2RXDPX.png');
+insert into categories (cat_name, cat_icon) values ('Ensino', 'https://i.imgur.com/kRwB94k.png');
+
 
 -- Add places 
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
