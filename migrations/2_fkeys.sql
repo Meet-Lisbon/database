@@ -4,7 +4,6 @@ create table routes_places (
     routes_places_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT routes_places_pkey PRIMARY KEY,
     routes_id uuid REFERENCES routes (route_id) ON UPDATE CASCADE ON DELETE CASCADE,
     places_id uuid REFERENCES places (place_id) ON UPDATE CASCADE ON DELETE CASCADE,
-    order_num smallint,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
 );
@@ -33,7 +32,6 @@ create table wishlist (
     wishlist_id uuid DEFAULT uuid_generate_v4() NOT NULL CONSTRAINT wishlist_pkey PRIMARY KEY,
     users_id uuid REFERENCES users (usr_id) ON UPDATE CASCADE ON DELETE CASCADE,
     places_id uuid REFERENCES places (place_id) ON UPDATE CASCADE ON DELETE CASCADE,
-    order_num smallint,
     created_at timestamp with time zone not null default CURRENT_TIMESTAMP,
     updated_at timestamp with time zone not null default CURRENT_TIMESTAMP
 );

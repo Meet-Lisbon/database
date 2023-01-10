@@ -157,8 +157,43 @@ insert into wishlist (users_id, places_id) values (
 );
 
 insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+);
+
+insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'darkarp'),
+    (SELECT place_id from places where place_name = 'Lisboa Story Centre')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'darkarp'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'frant7'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'frant7'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'frant7'),
+    (SELECT place_id from places where place_name = 'Arco do Triunfo')
+);
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'frant7'),
+    (SELECT place_id from places where place_name = 'Estátua D. José I')
 );
 
 -- Insert routes
@@ -173,42 +208,42 @@ insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
     (SELECT place_id from places where place_name = 'IADE')
 );
-
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
     (SELECT place_id from places where place_name = 'Timeout Market')
 );
-
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
     (SELECT place_id from places where place_name = 'Rua cor de Rosa')
 );
+insert into routes_places (routes_id, places_id) values (
+    (SELECT route_id from routes where route_name = 'Cais do Sodré'),
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
+);
+
 
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
     (SELECT place_id from places where place_name = 'Casa dos Bicos / Fundação José Saramago')
 );
-
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
-
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
-    (SELECT place_id from places where place_name = 'Praça Luis de Camões')
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
 );
+
 
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Belém'),
-    (SELECT place_id from places where place_name = 'Padrão dos descobrimento')
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
-
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Belém'),
     (SELECT place_id from places where place_name = 'Torre de Belém')
 );
-
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Belém'),
     (SELECT place_id from places where place_name = 'Farol de Belém')
@@ -221,17 +256,17 @@ insert into routes_places (routes_id, places_id) values (
 );
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Praça do Comércio'),
-    (SELECT place_id from places where place_name = 'Estátua D José I')
+    (SELECT place_id from places where place_name = 'Estátua D. José I')
 );
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Praça do Comércio'),
-    (SELECT place_id from places where place_name = 'Lisboa Story Center')
+    (SELECT place_id from places where place_name = 'Lisboa Story Centre')
 );
 
 
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
-    (SELECT place_id from places where place_name = 'Rua cor de rosa')
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa')
 );
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
@@ -239,13 +274,42 @@ insert into routes_places (routes_id, places_id) values (
 );
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
-    (SELECT place_id from places where place_name = 'Teatro da Trindade')
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL')
 );
 
 
 -- Insert into users_routes
 insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
-    (SELECT route_id from routes where route_name = 'Test name')
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'maria'),
+    (SELECT route_id from routes where route_name = 'Belém')
 );
 
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'darkarp'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'darkarp'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'darkarp'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'frant7'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'frant7'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
