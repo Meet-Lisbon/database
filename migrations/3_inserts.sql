@@ -329,23 +329,23 @@ insert into wishlist (users_id, places_id) values (
 );
 
 -- Insert into routes_categories
-insert into routes_places (routes_id, categories_id) values (
+insert into routes_categories (routes_id, categories_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
     (SELECT cat_id from categories where cat_name = 'Turístico')
 );
-insert into routes_places (routes_id, categories_id) values (
+insert into routes_categories (routes_id, categories_id) values (
     (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
     (SELECT cat_id from categories where cat_name = 'Entretenimento')
 );
-insert into routes_places (routes_id, categories_id) values (
+insert into routes_categories (routes_id, categories_id) values (
     (SELECT route_id from routes where route_name = 'Belém'),
     (SELECT cat_id from categories where cat_name = 'Histórico')
 );
-insert into routes_places (routes_id, categories_id) values (
+insert into routes_categories (routes_id, categories_id) values (
     (SELECT route_id from routes where route_name = 'Praça do Comércio'),
     (SELECT cat_id from categories where cat_name = 'Histórico')
 );
-insert into routes_places (routes_id, categories_id) values (
+insert into routes_categories (routes_id, categories_id) values (
     (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
     (SELECT cat_id from categories where cat_name = 'Turístico')
 );
