@@ -2,11 +2,22 @@
 insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Francisco', 'Traquete', 'frant7', 'francisco@gmail.com', 'test123', 'user');
 insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Maria', 'Martins', 'maria', 'maria@gmail.com', 'test123', 'admin');
 insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Mario', 'Nascimento', 'darkarp', 'mario@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Afonso', 'Goulart', 'afih', 'afonso@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Roberta', 'Santos', 'robi', 'roberta@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('João', 'Garcia', 'johnny', 'joao@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Miguel', 'Bernardo', 'michael', 'michael@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Laura', 'Martins', 'lala', 'laura@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Pedro', 'Costa', 'costa', 'pedro@gmail.com', 'test123', 'user');
+insert into users (usr_first_name, usr_last_name, usr_name, usr_email, usr_password_hash, usr_role) values ('Antónia', 'Manaia', 'tozita', 'antonia@gmail.com', 'test123', 'user');
 
 -- Add categories
 insert into categories (cat_name, cat_icon) values ('Histórico','https://i.imgur.com/UvN5MuX.jpg');
 insert into categories (cat_name, cat_icon) values ('Turístico', 'https://i.imgur.com/h0oaDeK.jpg');
 insert into categories (cat_name, cat_icon) values ('Literatura', 'https://i.imgur.com/o0PGm6l.png');
+insert into categories (cat_name, cat_icon) values ('Figuras Históricas', 'https://i.imgur.com/GpBWvp8.png');
+insert into categories (cat_name, cat_icon) values ('Entretenimento', 'https://i.imgur.com/j2RXDPX.png');
+insert into categories (cat_name, cat_icon) values ('Ensino', 'https://i.imgur.com/kRwB94k.png');
+
 
 -- Add places 
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
@@ -69,68 +80,53 @@ insert into places (place_name, place_image_url, place_latitude, place_longitude
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Timeout Market', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Timeout Market', 'https://i.imgur.com/gE5UNHa.jpg','38.70720006371532', '-9.145917302178974', 'Av. 24 de Julho 49, 1200-479 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        Time Out Market Lisboa é um food hall. <br>
+        O conceito passa por juntar os melhores chefs, restaurantes e projetos gastronómicos da capital portuguesa, com base nas recomendações dos críticos e colaboradores da revista Time Out. <br>
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Arco do Triunfo', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Arco do Triunfo', 'https://i.imgur.com/PpQSuXD.jpg','38.708687470695565', '-9.136813573550741', 'R. Augusta 2, 1100-053 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        A construção do Arco do Triunfo foi programada em 1759, no quadro da reconstrução pombalina após a destruição da baixa lisboeta pelo terramoto de 1755. <br>
+        A obra do arco triunfal, que já estava fechado em 1862 por ocasião do casamento de D. Luís I, como se observa em fotografias da época, apenas foi concluída em 1873. <br>
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Estátua D. José I', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Estátua D. José I', 'https://i.imgur.com/X5okuwp.jpg','38.70747350697425', '-9.136330775948354', 'Praça do Comércio MB, 1100-148 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        O monumento, de 14 m de altura, erguido para homenagear D. José I integra a sua estátua equestre em bronze. <br>
+        De influência francesa e a primeira estátua em bronze fundida em Portugal é considerada uma das mais belas estátuas do género em toda a Europa. <br> 
+        É também considerada a estátua pública mais antiga de Lisboa e do país. <br>
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'IADE', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'IADE', 'https://i.imgur.com/YzVHqOJ.jpg','38.70735444022605', '-9.152356849095387', 'Av. Dom Carlos i 4, 1200-649 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
-    '
-);
---! fix imagens e descrição
-insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Rua cor de Rosa', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
-    '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        O IADE – Faculdade de Design Tecnologia e Comunicação da Universidade Europeia, tem sido um laboratório de criatividade, talento e liderança reconhecido por toda a sociedade.<br>
+        É hoje uma referência no ensino da criatividade, escola pioneira no ensino do Design em Portugal e uma das melhores na Europa, além de estar entre as primeiras no ensino da Publicidade, do Marketing e da Fotografia. <br>
+        Foi fundado, em Lisboa, em 1969, tendo sido pioneiro do ensino do design em Portugal. É, atualmente, a instituição que mais estudantes forma nesta área. <br>
     '
 );
 
---! fix imagens e descrição
 insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
-    'Teatro da Trindade INATEL', 'https://i.imgur.com/OeB656k.jpg','38.69310423288588','-9.20900014390011','Av. Brasília, 1400-038 Lisboa',
+    'Rua cor de Rosa', 'https://i.imgur.com/rK37VGk.jpg', '38.70738693564283', '-9.143750987043921', 'R. Nova do Carvalho, 1200-370 Lisboa',
     '
-        Esta torre é um falso farol que nunca funcionou. <br>
-        Sendo apenas um elemento turístico situado entre a Torre de Belém e o Padrão dos Descobrimentos. <br>
-        Foi construído para a Exposição do Mundo Português em 1940 fazendo parte das histórias dos descobrimentos. <br>
-        
+        O nome "Rua Cor de Rosa" surgiu após um projeto de intervenção urbana em 2011, que foi consolidado em 2013. <br>
+        A sua pintura marcou o desejo de mudança e transformação desta região, que no passado não tinha uma fama muito simpática em Lisboa. <br>
+    '
+);
+
+insert into places (place_name, place_image_url, place_latitude, place_longitude, place_address, place_description) values (
+    'Teatro da Trindade INATEL', 'https://i.imgur.com/iV2dPdL.jpg','38.71202888351289', '-9.14248954471498','R. Nova da Trindade 9, 1200-301 Lisboa',
+    '
+        Em 1866, Francisco Palha, escritor e dramaturgo, decidiu construir o seu próprio teatro. <br>
+        Escolheu aquela zona da cidade pela sua antiga vocação cultural e recreativa - aí funcionara, em meados do século XVIII, a Academia da Trindade, o primeiro Teatro Popular de Ópera.<br>
     '
 );
 
@@ -142,7 +138,62 @@ insert into places_categories (places_id, categories_id) values (
 
 insert into places_categories (places_id, categories_id) values (
     (SELECT place_id from places where place_name = 'Torre de Belém'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Casa dos Bicos / Fundação José Saramago'),
     (SELECT cat_id from categories where cat_name = 'Literatura')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Lisboa Story Centre'),
+    (SELECT cat_id from categories where cat_name = 'Entretenimento')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões'),
+    (SELECT cat_id from categories where cat_name = 'Literatura')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Farol de Belém'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Timeout Market'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Arco do Triunfo'),
+    (SELECT cat_id from categories where cat_name = 'Histórico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Estátua D. José I'),
+    (SELECT cat_id from categories where cat_name = 'Figuras Históricas')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'IADE'),
+    (SELECT cat_id from categories where cat_name = 'Ensino')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+
+insert into places_categories (places_id, categories_id) values (
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL'),
+    (SELECT cat_id from categories where cat_name = 'Entretenimento')
 );
 
 -- Add places to wishlist
@@ -150,50 +201,153 @@ insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
     (SELECT place_id from places where place_name = 'Torre de Belém')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'maria'),
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
+
 
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Lisboa Story Centre')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
 
+
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Armazéns do Chiado')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Farol de Belém')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Arco do Triunfo')
 );
-
 insert into wishlist (users_id, places_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT place_id from places where place_name = 'Estátua D. José I')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'afih'),
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'afih'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'Torre de Belém')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'Timeout Market')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'IADE')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'johnny'),
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Casa dos Bicos / Fundação José Saramago')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Lisboa Story Centre')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Rua cor de Rosa')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT place_id from places where place_name = 'Armazéns do Chiado')
+);
+
+
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Arco do Triunfo')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Teatro da Trindade INATEL')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Farol de Belém')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'IADE')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Estátua D. José I')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Praça Luís de Camões')
+);
+insert into wishlist (users_id, places_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
+);
+
+-- Insert into routes_categories
+insert into routes_categories (routes_id, categories_id) values (
+    (SELECT route_id from routes where route_name = 'Cais do Sodré'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
+);
+insert into routes_categories (routes_id, categories_id) values (
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado'),
+    (SELECT cat_id from categories where cat_name = 'Entretenimento')
+);
+insert into routes_categories (routes_id, categories_id) values (
+    (SELECT route_id from routes where route_name = 'Belém'),
+    (SELECT cat_id from categories where cat_name = 'Histórico')
+);
+insert into routes_categories (routes_id, categories_id) values (
+    (SELECT route_id from routes where route_name = 'Praça do Comércio'),
+    (SELECT cat_id from categories where cat_name = 'Histórico')
+);
+insert into routes_categories (routes_id, categories_id) values (
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim'),
+    (SELECT cat_id from categories where cat_name = 'Turístico')
 );
 
 -- Insert routes
@@ -201,9 +355,9 @@ insert into routes (route_name, route_data) values ('Cais do Sodré', 'Test Data
 insert into routes (route_name, route_data) values ('Baixa/Chiado', 'Test Data 4');
 insert into routes (route_name, route_data) values ('Belém', 'Test Data 1');
 insert into routes (route_name, route_data) values ('Praça do Comércio', 'Test Data 2');
-insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 4');
--- Insert into routes_places
+insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 5');
 
+-- Insert into routes_places
 insert into routes_places (routes_id, places_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
     (SELECT place_id from places where place_name = 'IADE')
@@ -305,6 +459,8 @@ insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'darkarp'),
     (SELECT route_id from routes where route_name = 'Rua do Alecrim')
 );
+
+
 insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT route_id from routes where route_name = 'Praça do Comércio')
@@ -312,4 +468,82 @@ insert into users_routes (user_id, routes_id) values (
 insert into users_routes (user_id, routes_id) values (
     (SELECT usr_id from users where usr_name = 'frant7'),
     (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'johnny'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'johnny'),
+    (SELECT route_id from routes where route_name = 'Belém')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'afih'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'robi'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'michael'),
+    (SELECT route_id from routes where route_name = 'Belém')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'michael'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'tozita'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'costa'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'costa'),
+    (SELECT route_id from routes where route_name = 'Rua do Alecrim')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'costa'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
+);
+
+
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Belém')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Praça do Comércio')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Baixa/Chiado')
+);
+insert into users_routes (user_id, routes_id) values (
+    (SELECT usr_id from users where usr_name = 'lala'),
+    (SELECT route_id from routes where route_name = 'Cais do Sodré')
 );
