@@ -328,6 +328,13 @@ insert into wishlist (users_id, places_id) values (
     (SELECT place_id from places where place_name = 'Padrão dos Descobrimentos')
 );
 
+-- Insert routes
+insert into routes (route_name, route_data) values ('Cais do Sodré', 'Test Data 3');
+insert into routes (route_name, route_data) values ('Baixa/Chiado', 'Test Data 4');
+insert into routes (route_name, route_data) values ('Belém', 'Test Data 1');
+insert into routes (route_name, route_data) values ('Praça do Comércio', 'Test Data 2');
+insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 5');
+
 -- Insert into routes_categories
 insert into routes_categories (routes_id, categories_id) values (
     (SELECT route_id from routes where route_name = 'Cais do Sodré'),
@@ -350,12 +357,6 @@ insert into routes_categories (routes_id, categories_id) values (
     (SELECT cat_id from categories where cat_name = 'Turístico')
 );
 
--- Insert routes
-insert into routes (route_name, route_data) values ('Cais do Sodré', 'Test Data 3');
-insert into routes (route_name, route_data) values ('Baixa/Chiado', 'Test Data 4');
-insert into routes (route_name, route_data) values ('Belém', 'Test Data 1');
-insert into routes (route_name, route_data) values ('Praça do Comércio', 'Test Data 2');
-insert into routes (route_name, route_data) values ('Rua do Alecrim', 'Test Data 5');
 
 -- Insert into routes_places
 insert into routes_places (routes_id, places_id) values (
